@@ -29,7 +29,7 @@
         Greeting.InvokeGreeting();
 
 
-        //OR
+        //ORR
     
     const Person = {
         name: 'Dan',

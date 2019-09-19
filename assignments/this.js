@@ -3,8 +3,8 @@
 *
 * 1. When the 'this' keyword is used in the global scope. it refers to the window. (Window Binding)
 * 2. When the 'this' keyword is used with a preceding dot, it refers to the word before the dot. (Implicit Binding)
-* 3. 
-* 4. 
+* 3. New Binding creates a new function and is not immediately invoked 
+* 4. Explicit Binding has the function outside of the object and is not readily invoked
 *
 * write out a code example of each explanation above
 */

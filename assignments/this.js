@@ -10,15 +10,17 @@
 */
 
 // Principle 1
+// code example for Window Binding
     function Howdy (){
         console.log(this.YouAlright)
     }
     // Howdy();
     const YouAlright = 'Are you alright?'
     Howdy();
-// code example for Window Binding
+
 
 // Principle 2
+// code example for Implicit Binding
     let Greeting={
         Morning: 'Good Morning',
         Afternoon: 'Good Afternoon',
@@ -42,12 +44,31 @@
         }
     }
         console.log(Person.Loveto());
-// code example for Implicit Binding
+
 
 // Principle 3
-
 // code example for New Binding
 
-// Principle 4
+    function thisperson(says) {
+        this.thing = says;
+    }
 
+    let thatperson = new thisperson('Game of thrones is the GOAT. I said what I said.')
+
+    console.log(thatperson.thing);
+    
+
+// Principle 4
 // code example for Explicit Binding
+
+    function thispersons() {             //take note of the pluralisation. this is not the same function as from No. 3.
+        console.log(`${this.name} is a ${this.skill}`)
+    }
+
+    let thatpersons ={  
+        name: 'Arya',
+        skill: 'Water Dancer',
+        sex: 'female',
+        
+    }
+    thispersons.call(thatpersons);
